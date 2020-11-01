@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 let fs = require('fs');
+const { deflate } = require('zlib');
 
 const prefix = '#';
 
@@ -412,6 +413,10 @@ bot.on('message', function(message){
 
         case 'rollback' :
             message.channel.send('Belum tersedia!');
+            break;
+        
+        default :
+            message.channel.send('Perintah tidak ditemukan!');
             break;
     }
 })
