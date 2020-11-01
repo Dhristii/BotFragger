@@ -4,7 +4,7 @@ let fs = require('fs');
 
 const prefix = '#';
 
-const version = '1.0.0 (BETA)'
+const version = '1.0.1'
 
 bot.on('ready', function(){
     console.log('pantekkk');
@@ -35,41 +35,27 @@ bot.on('message', function(message){
                     }else if(chat[2] === 'kuhaku'){
                         array[10] = parseInt(array[10]) + 1;
                     }
-                    // let angka = {};
-
-                    // for(let i = 0; i < array.length; i++){
-                    //     // angka[i] = array[i].match(/(\d+)/);
-                    //     if(array[i] == " "){
-                    //         array[i] == "\n\n";
-                    //     }
-                    // }
 
                     array[1] = parseInt(array[1]) + 1;
                     array[12] = parseInt(array[12]) + 1;
 
-                    
-                    message.channel.send(array[0]);
-                    message.channel.send('Dd ' + array[1]);
-                    message.channel.send('Shouko ' + array[2]);
-                    message.channel.send('Datonkun ' + array[3]);
-                    message.channel.send('Kuhaku Desu ' + array[4] + '\n');
-                    message.channel.send('================');
-                    message.channel.send(array[6]);
-                    message.channel.send('Dd ' + array[7]);
-                    message.channel.send('Shouko ' + array[8]);
-                    message.channel.send('Datonkun ' + array[9]);
-                    message.channel.send('Kuhaku Desu ' + array[10] + '\n');
-                    message.channel.send('================');
-                    message.channel.send('Match : ' + array[12]);
+                    let print = {};
+                    print[0] = array[0];
+                    print[1] = 'Dd ' + array[1];
+                    print[2] = 'Shouko ' + array[2];
+                    print[3] = 'Datonkun ' + array[3];
+                    print[4] = 'Kuhaku Desu ' + array[4];
+                    print[5] = '';
+                    print[6] = array[6];
+                    print[7] = 'Dd ' + array[7];
+                    print[8] = 'Shouko ' + array[8];
+                    print[9] = 'Datonkun ' + array[9];
+                    print[10] = 'Kuhaku Desu ' + array[10];
+                    print[11] = '';
+                    print[12] = 'Match : ' + array[12];
 
-                    // for(let i = 0; i < array.length; i++){
-                    //     // angka[i] = array[i].match(/(\d+)/);
-                    //     if(array[i] == "\n\n"){
-                    //         array[i] == " ";
-                    //     }
-                    // }
-
-                    // message.channel.send(array);
+                    let temp = Object.keys(print).map((key) => [print[key]]);
+                    message.channel.send(temp);
 
                     let toWrite = array;
                     fs.writeFile('botfrager.txt', toWrite, function(err){
@@ -92,20 +78,23 @@ bot.on('message', function(message){
                     array[2] = parseInt(array[2]) + 1;
                     array[12] = parseInt(array[12]) + 1;
 
-                    
-                    message.channel.send(array[0]);
-                    message.channel.send('Dd ' + array[1]);
-                    message.channel.send('Shouko ' + array[2]);
-                    message.channel.send('Datonkun ' + array[3]);
-                    message.channel.send('Kuhaku Desu ' + array[4] + '\n');
-                    message.channel.send('================');
-                    message.channel.send(array[6]);
-                    message.channel.send('Dd ' + array[7]);
-                    message.channel.send('Shouko ' + array[8]);
-                    message.channel.send('Datonkun ' + array[9]);
-                    message.channel.send('Kuhaku Desu ' + array[10] + '\n');
-                    message.channel.send('================');
-                    message.channel.send('Match : ' + array[12]);
+                    let print = {};
+                    print[0] = array[0];
+                    print[1] = 'Dd ' + array[1];
+                    print[2] = 'Shouko ' + array[2];
+                    print[3] = 'Datonkun ' + array[3];
+                    print[4] = 'Kuhaku Desu ' + array[4];
+                    print[5] = '';
+                    print[6] = array[6];
+                    print[7] = 'Dd ' + array[7];
+                    print[8] = 'Shouko ' + array[8];
+                    print[9] = 'Datonkun ' + array[9];
+                    print[10] = 'Kuhaku Desu ' + array[10];
+                    print[11] = '';
+                    print[12] = 'Match : ' + array[12];
+
+                    let temp = Object.keys(print).map((key) => [print[key]]);
+                    message.channel.send(temp);
 
                     let toWrite = array;
                     fs.writeFile('botfrager.txt', toWrite, function(err){
@@ -127,20 +116,23 @@ bot.on('message', function(message){
                     array[3] = parseInt(array[3]) + 1;
                     array[12] = parseInt(array[12]) + 1;
 
-                    
-                    message.channel.send(array[0]);
-                    message.channel.send('Dd ' + array[1]);
-                    message.channel.send('Shouko ' + array[2]);
-                    message.channel.send('Datonkun ' + array[3]);
-                    message.channel.send('Kuhaku Desu ' + array[4] + '\n');
-                    message.channel.send('================');
-                    message.channel.send(array[6]);
-                    message.channel.send('Dd ' + array[7]);
-                    message.channel.send('Shouko ' + array[8]);
-                    message.channel.send('Datonkun ' + array[9]);
-                    message.channel.send('Kuhaku Desu ' + array[10] + '\n');
-                    message.channel.send('================');
-                    message.channel.send('Match : ' + array[12]);
+                    let print = {};
+                    print[0] = array[0];
+                    print[1] = 'Dd ' + array[1];
+                    print[2] = 'Shouko ' + array[2];
+                    print[3] = 'Datonkun ' + array[3];
+                    print[4] = 'Kuhaku Desu ' + array[4];
+                    print[5] = '';
+                    print[6] = array[6];
+                    print[7] = 'Dd ' + array[7];
+                    print[8] = 'Shouko ' + array[8];
+                    print[9] = 'Datonkun ' + array[9];
+                    print[10] = 'Kuhaku Desu ' + array[10];
+                    print[11] = '';
+                    print[12] = 'Match : ' + array[12];
+
+                    let temp = Object.keys(print).map((key) => [print[key]]);
+                    message.channel.send(temp);
 
                     let toWrite = array;
                     fs.writeFile('botfrager.txt', toWrite, function(err){
@@ -162,20 +154,23 @@ bot.on('message', function(message){
                     array[4] = parseInt(array[4]) + 1;
                     array[12] = parseInt(array[12]) + 1;
 
-                    
-                    message.channel.send(array[0]);
-                    message.channel.send('Dd ' + array[1]);
-                    message.channel.send('Shouko ' + array[2]);
-                    message.channel.send('Datonkun ' + array[3]);
-                    message.channel.send('Kuhaku Desu ' + array[4] + '\n');
-                    message.channel.send('================');
-                    message.channel.send(array[6]);
-                    message.channel.send('Dd ' + array[7]);
-                    message.channel.send('Shouko ' + array[8]);
-                    message.channel.send('Datonkun ' + array[9]);
-                    message.channel.send('Kuhaku Desu ' + array[10] + '\n');
-                    message.channel.send('================');
-                    message.channel.send('Match : ' + array[12]);
+                    let print = {};
+                    print[0] = array[0];
+                    print[1] = 'Dd ' + array[1];
+                    print[2] = 'Shouko ' + array[2];
+                    print[3] = 'Datonkun ' + array[3];
+                    print[4] = 'Kuhaku Desu ' + array[4];
+                    print[5] = '';
+                    print[6] = array[6];
+                    print[7] = 'Dd ' + array[7];
+                    print[8] = 'Shouko ' + array[8];
+                    print[9] = 'Datonkun ' + array[9];
+                    print[10] = 'Kuhaku Desu ' + array[10];
+                    print[11] = '';
+                    print[12] = 'Match : ' + array[12];
+
+                    let temp = Object.keys(print).map((key) => [print[key]]);
+                    message.channel.send(temp);
 
                     let toWrite = array;
                     fs.writeFile('botfrager.txt', toWrite, function(err){
@@ -199,19 +194,24 @@ bot.on('message', function(message){
             lineReader.on('line', function (line) {
                 let array = line.split(',');
                 
-                message.channel.send(array[0]);
-                message.channel.send('Dd ' + array[1]);
-                message.channel.send('Shouko ' + array[2]);
-                message.channel.send('Datonkun ' + array[3]);
-                message.channel.send('Kuhaku Desu ' + array[4] + '\n');
-                message.channel.send('================');
-                message.channel.send(array[6]);
-                message.channel.send('Dd ' + array[7]);
-                message.channel.send('Shouko ' + array[8]);
-                message.channel.send('Datonkun ' + array[9]);
-                message.channel.send('Kuhaku Desu ' + array[10] + '\n');
-                message.channel.send('================');
-                message.channel.send('Match : ' + array[12]);
+                let print = {};
+                print[0] = array[0];
+                print[1] = 'Dd ' + array[1];
+                print[2] = 'Shouko ' + array[2];
+                print[3] = 'Datonkun ' + array[3];
+                print[4] = 'Kuhaku Desu ' + array[4];
+                print[5] = '';
+                print[6] = array[6];
+                print[7] = 'Dd ' + array[7];
+                print[8] = 'Shouko ' + array[8];
+                print[9] = 'Datonkun ' + array[9];
+                print[10] = 'Kuhaku Desu ' + array[10];
+                print[11] = '';
+                print[12] = 'Match : ' + array[12];
+
+                let temp = Object.keys(print).map((key) => [print[key]]);
+                message.channel.send(temp);
+                
             });
             break;
     }

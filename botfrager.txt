@@ -1,1 +1,1 @@
-Botfrager:,5,10,9,6, ,TopFrag:,17,2,7,4, ,30
+Botfrager:,8,11,9,9, ,TopFrag:,17,7,9,4, ,37
